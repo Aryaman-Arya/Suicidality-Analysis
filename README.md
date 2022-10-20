@@ -88,8 +88,11 @@ fig.show()
 Without Split
 
 R2 score: 0.224429
-Mean square error:63791.035
+
+Mean square error: 63791.035
+
 Root mean square error: 252.569
+
 Mean absolute error: 13.070
 
 
