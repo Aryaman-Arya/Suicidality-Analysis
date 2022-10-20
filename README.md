@@ -82,7 +82,8 @@ fig = px.scatter_3d(df,x='population',y='gender',z='suicides_no')
 fig.show()
 ```
 
-##Plot 4
+![image](https://user-images.githubusercontent.com/75626387/196893751-c01c8752-06d9-4868-bea4-c17f65f95942.png)
+
 
 Without Split
 
@@ -133,7 +134,7 @@ print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
 print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
 print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
 ```
-##Plot 5
+![image](https://user-images.githubusercontent.com/75626387/196894115-7702e1d5-e104-422d-99d1-cbccf8f37ba4.png)
 
 
 
