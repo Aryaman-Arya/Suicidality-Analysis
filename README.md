@@ -4,8 +4,6 @@ Analysed the risk of suicides for varying compositions of the human population b
 
 ## Tech Stack
 
-**[Python 3.10](https://www.python.org/downloads/release/python-3106/)** 
-
 **[Pandas](https://pandas.pydata.org/docs/getting_started/install.html)** 
 
 **[NumPy](https://numpy.org/install/)** 
