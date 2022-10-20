@@ -68,6 +68,75 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_s
 ```
 ![image](https://user-images.githubusercontent.com/75626387/196880801-f657e3aa-3353-4813-a488-c24215bca675.png)
 
+**Gradient Descent**
+
+##Plot 3
+
+### Multiple Regression
+
+```bash
+X=df.iloc[:,[1,2]].values
+y=df.iloc[:,-1].values
+
+fig = px.scatter_3d(df,x='population',y='gender',z='suicides_no')
+fig.show()
+```
+
+##Plot 4
+
+Without Split
+
+```bash
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+from math import sqrt
+
+
+print("R2 score : %.6f" % r2_score(y, regressor.predict(X)))
+print("MSE: %.3f" % mean_squared_error(y,regressor.predict(X)))
+print("RMSE: %.3f" % sqrt(mean_squared_error(y, regressor.predict(X))))
+print("MAE: %.3f" % sqrt(mean_absolute_error(y, regressor.predict(X))))
+```
+
+#### With Split
+
+**Taking 70% Training and 30% Testing data**
+
+```bash
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=30, random_state=0)
+
+print("R2 score : %.3f" % r2_score(y_test, regressor.predict(X_test)))
+print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
+print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
+print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
+```
+
+
+**Taking 80% Training and 20% Testing data**
+
+```bash
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=20, random_state=0)
+
+print("R2 score : %.3f" % r2_score(y_test, regressor.predict(X_test)))
+print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
+print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
+print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
+```
+
+**Taking 50% Training and 50% Testing data**
+
+```bash
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_state=0)
+
+print("R2 score : %.3f" % r2_score(y_test, regressor.predict(X_test)))
+print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
+print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
+print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
+```
+##Plot 5
+
+
+
 
 ## Authors
 
