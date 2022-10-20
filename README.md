@@ -25,7 +25,8 @@ sns.heatmap(df.corr(), annot=True, cmap="YlGnBu")
 plt.show()
 ```
 
-##Plot 1: HEATMAP IMAGE
+![image](https://user-images.githubusercontent.com/75626387/196880241-a5202c4c-353b-436a-9630-f7f60d330d70.png)
+
 
 Through this heatmap, we observed that the parameter suicides_no has larger
 correlation with population and gender as compared to the other parameters.
