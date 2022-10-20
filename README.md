@@ -87,55 +87,17 @@ fig.show()
 
 Without Split
 
-```bash
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
-from math import sqrt
+R2 score: 0.224429
+Mean square error:63791.035
+Root mean square error: 252.569
+Mean absolute error: 13.070
 
-
-print("R2 score : %.6f" % r2_score(y, regressor.predict(X)))
-print("MSE: %.3f" % mean_squared_error(y,regressor.predict(X)))
-print("RMSE: %.3f" % sqrt(mean_squared_error(y, regressor.predict(X))))
-print("MAE: %.3f" % sqrt(mean_absolute_error(y, regressor.predict(X))))
-```
 
 #### With Split
 
-**Taking 70% Training and 30% Testing data**
-
-```bash
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=30, random_state=0)
-
-print("R2 score : %.3f" % r2_score(y_test, regressor.predict(X_test)))
-print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
-print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
-print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
-```
-
-
-**Taking 80% Training and 20% Testing data**
-
-```bash
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=20, random_state=0)
-
-print("R2 score : %.3f" % r2_score(y_test, regressor.predict(X_test)))
-print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
-print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
-print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
-```
-
-**Taking 50% Training and 50% Testing data**
-
-```bash
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_state=0)
-
-print("R2 score : %.3f" % r2_score(y_test, regressor.predict(X_test)))
-print("MSE: %.3f" % mean_squared_error(y_test, regressor.predict(X_test)))
-print("RMSE: %.3f" % sqrt(mean_squared_error(y_test, regressor.predict(X_test))))
-print("MAE: %.3f" % sqrt(mean_absolute_error(y_test, regressor.predict(X_test))))
-```
 ![image](https://user-images.githubusercontent.com/75626387/196894115-7702e1d5-e104-422d-99d1-cbccf8f37ba4.png)
 
+On splitting the model into train and test data, we can observe that the R2 score has reduced. Out of all the splits 70:30 gives a better accuracy and thus has a better R2 score.
 
 
 
