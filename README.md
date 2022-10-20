@@ -102,7 +102,61 @@ Mean absolute error: 13.070
 
 On splitting the model into train and test data, we can observe that the R2 score has reduced. Out of all the splits 70:30 gives a better accuracy and thus has a better R2 score.
 
+### Polynomial Regression
 
+We have performed the polynomial regression for degree 1, 2 and 3.
+
+**Without split**
+
+**Degree 1**
+
+![image](https://user-images.githubusercontent.com/75626387/197009979-6be5dde6-b4c2-40a1-9aa8-a0447bdf4631.png)
+
+
+**Degree 2**
+
+![image](https://user-images.githubusercontent.com/75626387/197010015-05a648a1-9d0f-408d-bd96-68f2debfa266.png)
+
+
+**Degree 3**
+
+![image](https://user-images.githubusercontent.com/75626387/197010037-cd9894ab-f77c-41bd-9525-04d6568ba69c.png)
+
+Here we can observe that Polynomial regression on degree 3 gives a larger R2 score than on degree 1 and 2 for this dataset.
+
+![image](https://user-images.githubusercontent.com/75626387/197010154-6f836630-c0c3-4e6b-b2bd-0f004c341417.png)
+
+**With split**
+
+**Degree 1**
+
+![image](https://user-images.githubusercontent.com/75626387/197010573-dc168e31-7f59-4466-a7e8-40efbf95edf6.png)
+
+![image](https://user-images.githubusercontent.com/75626387/197010627-bc86ce4f-4804-4a80-aa04-ac0e67b6d3f3.png)
+
+**Degree 2**
+
+![image](https://user-images.githubusercontent.com/75626387/197010742-26ea7935-4de1-483a-b6a9-441b3e761f20.png)
+
+![image](https://user-images.githubusercontent.com/75626387/197010810-134c864d-7973-4ff8-a879-7a02d56bbc9b.png)
+
+### Regularization
+
+**Ridge Regression**
+
+Using ridge regression, we are able to curb the overfitting of the model and reduce the complexity. Comparing the ridge regression with predictors 1 and 2, here are the results that we get.
+
+![image](https://user-images.githubusercontent.com/75626387/197011286-693f5d18-e23a-4baf-9763-c9fbb72cb991.png)
+
+Here, we can observe that the R2 score with 2 predictors is greater than that of 1 and thus 2 predictors will give more accurate results than 1 predictor. The 2 predictors here are population and gender.
+
+**Lasso Regression**
+
+![image](https://user-images.githubusercontent.com/75626387/197011494-16cbadd8-9e41-44bb-b1ee-7d3473ce421c.png)
+
+Lasso and ridge regression both give almost similar results, the reason being both are used to curb the overfitting and make the model less complex.
+
+After applying all the statistical learning techniques to build the machine learning model, we conclude that among all the regression techniques, polynomial regression with degree 1 gives the most accurate results on splitting the dataset into training and testing with the ratio of 80:20. It gives an accuracy of 33%. Our model gives a lesser accuracy because the dataset that we have chosen has very large-scale values of the parameter population and so it does not give very accurate results. On applying the ridge and lasso regression techniques and curbing the overfitting, the model finally gives an accuracy of 39%.
 
 ## Authors
 
