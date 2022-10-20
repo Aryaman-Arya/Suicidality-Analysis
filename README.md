@@ -15,7 +15,11 @@ Analysed the risk of suicides for varying compositions of the human population b
 **[Scikit-learn](https://scikit-learn.org/stable/install.html)** 
 ## Implementation
 
-To deploy this project run
+The dataset that we have selected for our project” Mental Health Survey” is the Analysis of suicidal cases from the year 1987 to 2000 of various countries. the dataset has various parameters including Country, generation, gender, population, GDP of the country and number of suicide cases. By collecting information about past suicidal data and analysing them, we can create a model that could be used to curb this problem by providing mental health training to the people in maximum need.
+
+![image](https://user-images.githubusercontent.com/75626387/197013566-5ca0f1d3-b814-4e4a-9161-268678d57cfc.png)
+
+The parameters that have a large correlation value, are largely correlated with each other or the dependent variable is largely affected by the independent variable.
 
 ```bash
 plt.figure(figsize=(10,8))
@@ -68,10 +72,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_s
 ```
 ![image](https://user-images.githubusercontent.com/75626387/196880801-f657e3aa-3353-4813-a488-c24215bca675.png)
 
-**Gradient Descent**
-
-##Plot 3
-
 ### Multiple Regression
 
 ```bash
@@ -110,35 +110,35 @@ We have performed the polynomial regression for degree 1, 2 and 3.
 
 **Degree 1**
 
-![image](https://user-images.githubusercontent.com/75626387/197009979-6be5dde6-b4c2-40a1-9aa8-a0447bdf4631.png)
+![image](https://user-images.githubusercontent.com/75626387/197014032-11f442b5-3930-4194-b12b-f59a27e397d8.png)
 
 
 **Degree 2**
 
-![image](https://user-images.githubusercontent.com/75626387/197010015-05a648a1-9d0f-408d-bd96-68f2debfa266.png)
+![image](https://user-images.githubusercontent.com/75626387/197014049-9c85b777-a358-442a-9e43-92d1cb5bb7c4.png)
 
 
 **Degree 3**
 
-![image](https://user-images.githubusercontent.com/75626387/197010037-cd9894ab-f77c-41bd-9525-04d6568ba69c.png)
+![image](https://user-images.githubusercontent.com/75626387/197014080-08e84ffc-acb7-4993-9db0-9aa244a22c1f.png)
 
 Here we can observe that Polynomial regression on degree 3 gives a larger R2 score than on degree 1 and 2 for this dataset.
 
-![image](https://user-images.githubusercontent.com/75626387/197010154-6f836630-c0c3-4e6b-b2bd-0f004c341417.png)
+![image](https://user-images.githubusercontent.com/75626387/197014104-91e04762-3fd2-499e-8a96-2a7d80f6f4df.png)
 
 **With split**
 
 **Degree 1**
 
-![image](https://user-images.githubusercontent.com/75626387/197010573-dc168e31-7f59-4466-a7e8-40efbf95edf6.png)
+![image](https://user-images.githubusercontent.com/75626387/197014124-b3ed9537-7f39-4db4-88c9-a935a1dc1d48.png)
 
-![image](https://user-images.githubusercontent.com/75626387/197010627-bc86ce4f-4804-4a80-aa04-ac0e67b6d3f3.png)
+![image](https://user-images.githubusercontent.com/75626387/197014149-8eb96357-3e01-4001-b74b-e7f4d473d33f.png)
 
 **Degree 2**
 
-![image](https://user-images.githubusercontent.com/75626387/197010742-26ea7935-4de1-483a-b6a9-441b3e761f20.png)
+![image](https://user-images.githubusercontent.com/75626387/197014183-66c15d9b-bb71-414a-8b39-f1797877c102.png)
 
-![image](https://user-images.githubusercontent.com/75626387/197010810-134c864d-7973-4ff8-a879-7a02d56bbc9b.png)
+![image](https://user-images.githubusercontent.com/75626387/197014209-5680d0e2-4b52-4afb-baaa-40c6a4ffa871.png)
 
 ### Regularization
 
