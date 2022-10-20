@@ -85,7 +85,7 @@ fig.show()
 ![image](https://user-images.githubusercontent.com/75626387/196893751-c01c8752-06d9-4868-bea4-c17f65f95942.png)
 
 
-Without Split
+**Without Split**
 
 R2 score: 0.224429
 
@@ -96,7 +96,7 @@ Root mean square error: 252.569
 Mean absolute error: 13.070
 
 
-#### With Split
+**With Split**
 
 ![image](https://user-images.githubusercontent.com/75626387/196894115-7702e1d5-e104-422d-99d1-cbccf8f37ba4.png)
 
