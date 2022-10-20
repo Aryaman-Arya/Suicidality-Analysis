@@ -43,7 +43,7 @@ plt.xlabel('Population:  Independent variable')
 plt.ylabel('No of suicides: Target variable')
 plt.title('Population vs no of suicides');
 ```
-##Plot 2
+![image](https://user-images.githubusercontent.com/75626387/196880556-b87f429c-f4c8-497c-a3d8-a73589c9038f.png)
 
 #### With Split
 
@@ -54,21 +54,21 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=30, random_state=0)
 ```
 
-##Plot 3
+![image](https://user-images.githubusercontent.com/75626387/196880664-5baafa5f-6f57-4245-969d-94c854502a5e.png)
 
 **Taking 80% Training and 20% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=20, random_state=0)
 ```
-##Plot 3
+![image](https://user-images.githubusercontent.com/75626387/196880745-bf23b116-2eae-4043-8212-ec1648023802.png)
 
 **Taking 50% Training and 50% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_state=0)
 ```
-##Plot 3
+![image](https://user-images.githubusercontent.com/75626387/196880801-f657e3aa-3353-4813-a488-c24215bca675.png)
 
 
 ## Authors
