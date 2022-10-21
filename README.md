@@ -4,15 +4,15 @@ Analysed the risk of suicides for varying compositions of the human population b
 
 ## Tech Stack
 
-**[Pandas](https://pandas.pydata.org/docs/getting_started/install.html)** 
+* **[Pandas](https://pandas.pydata.org/docs/getting_started/install.html)** 
 
-**[NumPy](https://numpy.org/install/)** 
+* **[NumPy](https://numpy.org/install/)** 
 
-**[Matplotlib](https://matplotlib.org/stable/users/installing/index.html)** 
+* **[Matplotlib](https://matplotlib.org/stable/users/installing/index.html)** 
 
-**[Seaborn](https://seaborn.pydata.org/installing.html)** 
+* **[Seaborn](https://seaborn.pydata.org/installing.html)** 
 
-**[Scikit-learn](https://scikit-learn.org/stable/install.html)** 
+* **[Scikit-learn](https://scikit-learn.org/stable/install.html)** 
 ## Implementation
 
 The dataset that we have selected for our project” Mental Health Survey” is the Analysis of suicidal cases from the year 1987 to 2000 of various countries. the dataset has various parameters including Country, generation, gender, population, GDP of the country and number of suicide cases. By collecting information about past suicidal data and analysing them, we can create a model that could be used to curb this problem by providing mental health training to the people in maximum need.
