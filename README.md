@@ -49,7 +49,7 @@ plt.title('Population vs no of suicides');
 
 * #### With Split
 
-* **Taking 70% Training and 30% Testing data**
+**Taking 70% Training and 30% Testing data**
 
 ```bash
 from sklearn.model_selection import train_test_split
@@ -58,14 +58,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=30, random_s
 
 ![image](https://user-images.githubusercontent.com/75626387/196880664-5baafa5f-6f57-4245-969d-94c854502a5e.png)
 
-* **Taking 80% Training and 20% Testing data**
+**Taking 80% Training and 20% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=20, random_state=0)
 ```
 ![image](https://user-images.githubusercontent.com/75626387/196880745-bf23b116-2eae-4043-8212-ec1648023802.png)
 
-* **Taking 50% Training and 50% Testing data**
+**Taking 50% Training and 50% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_state=0)
@@ -85,7 +85,7 @@ fig.show()
 ![image](https://user-images.githubusercontent.com/75626387/196893751-c01c8752-06d9-4868-bea4-c17f65f95942.png)
 
 
-**Without Split**
+* **Without Split**
 
 R2 score: 0.224429
 
@@ -96,7 +96,7 @@ Root mean square error: 252.569
 Mean absolute error: 13.070
 
 
-**With Split**
+* **With Split**
 
 ![image](https://user-images.githubusercontent.com/75626387/196894115-7702e1d5-e104-422d-99d1-cbccf8f37ba4.png)
 
@@ -106,7 +106,7 @@ On splitting the model into train and test data, we can observe that the R2 scor
 
 We have performed the polynomial regression for degree 1, 2 and 3.
 
-**Without split**
+* **Without split**
 
 **Degree 1**
 
@@ -126,7 +126,7 @@ Here we can observe that Polynomial regression on degree 3 gives a larger R2 sco
 
 ![image](https://user-images.githubusercontent.com/75626387/197014104-91e04762-3fd2-499e-8a96-2a7d80f6f4df.png)
 
-**With split**
+* **With split**
 
 **Degree 1**
 
@@ -142,7 +142,7 @@ Here we can observe that Polynomial regression on degree 3 gives a larger R2 sco
 
 ### Regularization
 
-**Ridge Regression**
+* **Ridge Regression**
 
 Using ridge regression, we are able to curb the overfitting of the model and reduce the complexity. Comparing the ridge regression with predictors 1 and 2, here are the results that we get.
 
@@ -150,7 +150,7 @@ Using ridge regression, we are able to curb the overfitting of the model and red
 
 Here, we can observe that the R2 score with 2 predictors is greater than that of 1 and thus 2 predictors will give more accurate results than 1 predictor. The 2 predictors here are population and gender.
 
-**Lasso Regression**
+* **Lasso Regression**
 
 ![image](https://user-images.githubusercontent.com/75626387/197011494-16cbadd8-9e41-44bb-b1ee-7d3473ce421c.png)
 
