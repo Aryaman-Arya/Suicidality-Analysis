@@ -56,21 +56,21 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=30, random_state=0)
 ```
 
-![image](https://user-images.githubusercontent.com/75626387/196880664-5baafa5f-6f57-4245-969d-94c854502a5e.png)
+![image](https://user-images.githubusercontent.com/75626387/197674128-88c5acfc-fcd1-48ad-9ded-2b3daed3e294.png)
 
 **Taking 80% Training and 20% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=20, random_state=0)
 ```
-![image](https://user-images.githubusercontent.com/75626387/196880745-bf23b116-2eae-4043-8212-ec1648023802.png)
+![image](https://user-images.githubusercontent.com/75626387/197674158-f58c618f-a5a3-4b3e-8de6-981c72b72a35.png)
 
 **Taking 50% Training and 50% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_state=0)
 ```
-![image](https://user-images.githubusercontent.com/75626387/196880801-f657e3aa-3353-4813-a488-c24215bca675.png)
+![image](https://user-images.githubusercontent.com/75626387/197674180-4b5855b2-8b50-4f5d-a7ad-09fd4a41db88.png)
 
 ### Multiple Regression
 
@@ -82,7 +82,7 @@ fig = px.scatter_3d(df,x='population',y='gender',z='suicides_no')
 fig.show()
 ```
 
-![image](https://user-images.githubusercontent.com/75626387/196893751-c01c8752-06d9-4868-bea4-c17f65f95942.png)
+![newplot](https://user-images.githubusercontent.com/75626387/197675230-67de77ea-ca53-49f9-9067-91ee6b4c5080.png)
 
 
 * **Without Split**
