@@ -155,7 +155,7 @@ We have performed the polynomial regression for degree 1, 2 and 3.
 
 Here we can observe that Polynomial regression on degree 3 gives a larger R2 score than on degree 1 and 2 for this dataset.
 
-![image](https://user-images.githubusercontent.com/75626387/197014104-91e04762-3fd2-499e-8a96-2a7d80f6f4df.png)
+![image](https://user-images.githubusercontent.com/75626387/197771403-20caab53-c0f9-405b-abee-781ac7ab99ad.png)
 
 * **With split**
 
