@@ -27,7 +27,7 @@ sns.heatmap(df.corr(), annot=True, cmap="YlGnBu")
 plt.show()
 ```
 
-![image](https://user-images.githubusercontent.com/75626387/197711317-ca64f58e-201d-4050-817a-8015a1cb4917.png)
+![image](https://user-images.githubusercontent.com/75626387/197766442-63467ff8-7e5e-4332-920f-304be9e3160f.png)
 
 
 Through this heatmap, we observed that the parameter suicides_no has larger
@@ -45,7 +45,7 @@ plt.xlabel('Population:  Independent variable')
 plt.ylabel('No of suicides: Target variable')
 plt.title('Population vs no of suicides');
 ```
-![image](https://user-images.githubusercontent.com/75626387/197673670-ea4f5bb7-25cc-4f2b-969b-2c6ae4e1267a.png)
+![image](https://user-images.githubusercontent.com/75626387/197766605-43b7c660-b78f-424c-884e-793658de7cdc.png)
 
 * #### With Split
 
@@ -56,21 +56,21 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=30, random_state=0)
 ```
 
-![image](https://user-images.githubusercontent.com/75626387/197674128-88c5acfc-fcd1-48ad-9ded-2b3daed3e294.png)
+![image](https://user-images.githubusercontent.com/75626387/197766678-2ce9493d-6561-4380-a313-8f7ff0b6eaa1.png)
 
 **Taking 80% Training and 20% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=20, random_state=0)
 ```
-![image](https://user-images.githubusercontent.com/75626387/197674158-f58c618f-a5a3-4b3e-8de6-981c72b72a35.png)
+![image](https://user-images.githubusercontent.com/75626387/197766723-6f9b571f-9441-471d-ae57-59e90d632029.png)
 
 **Taking 50% Training and 50% Testing data**
 
 ```bash
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=50, random_state=0)
 ```
-![image](https://user-images.githubusercontent.com/75626387/197674180-4b5855b2-8b50-4f5d-a7ad-09fd4a41db88.png)
+![image](https://user-images.githubusercontent.com/75626387/197766810-61570cbf-d23f-4619-8962-fde28b8e47bf.png)
 
 ### Multiple Regression
 
@@ -82,25 +82,44 @@ fig = px.scatter_3d(df,x='population',y='gender',z='suicides_no')
 fig.show()
 ```
 
-![newplot](https://user-images.githubusercontent.com/75626387/197675230-67de77ea-ca53-49f9-9067-91ee6b4c5080.png)
+![newplot](https://user-images.githubusercontent.com/75626387/197767329-8fdfa562-6ec2-4892-aaf2-dd6564108573.png)
 
 
 * **Without Split**
 
-R2 score: 0.224429
+R2 score: 0.025905
 
-Mean square error: 63791.035
+MSE(Mean square error): 792583.054
 
-Root mean square error: 252.569
+RMSE(Root mean square error): 890.271
 
-Mean absolute error: 13.070
+MAE(Mean absolute error): 18.017
 
 
 * **With Split**
 
-![image](https://user-images.githubusercontent.com/75626387/196894115-7702e1d5-e104-422d-99d1-cbccf8f37ba4.png)
+**Taking 70% Training and 30% Testing data**
 
-On splitting the model into train and test data, we can observe that the R2 score has reduced. Out of all the splits 70:30 gives a better accuracy and thus has a better R2 score.
+R2 score : -0.236
+MSE: 476057.532
+RMSE: 689.969
+MAE: 19.888
+
+**Taking 80% Training and 20% Testing data**
+
+R2 score : -0.256
+MSE: 625660.232
+RMSE: 790.987
+MAE: 20.844
+
+**Taking 50% Training and 50% Testing data**
+
+R2 score : -0.178
+MSE: 302277.129
+RMSE: 549.797
+MAE: 17.488
+
+On splitting the model into train and test data, we can observe that the R2 score has reduced. Out of all the splits 80:20 gives a better accuracy and thus has a better R2 score.
 
 ### Polynomial Regression
 
