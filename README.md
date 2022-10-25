@@ -27,7 +27,7 @@ sns.heatmap(df.corr(), annot=True, cmap="YlGnBu")
 plt.show()
 ```
 
-![image](https://user-images.githubusercontent.com/75626387/197673513-4dc2abfd-c5f2-47d7-82c5-b4012e62b2f8.png)
+![image](https://user-images.githubusercontent.com/75626387/197711317-ca64f58e-201d-4050-817a-8015a1cb4917.png)
 
 
 Through this heatmap, we observed that the parameter suicides_no has larger
