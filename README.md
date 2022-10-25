@@ -17,7 +17,7 @@ Analysed the risk of suicides for varying compositions of the human population b
 
 The dataset that we have selected for our project” Mental Health Survey” is the Analysis of suicidal cases from the year 1987 to 2000 of various countries. the dataset has various parameters including Country, generation, gender, population, GDP of the country and number of suicide cases. By collecting information about past suicidal data and analysing them, we can create a model that could be used to curb this problem by providing mental health training to the people in maximum need.
 
-![image](https://user-images.githubusercontent.com/75626387/197013566-5ca0f1d3-b814-4e4a-9161-268678d57cfc.png)
+![image](https://user-images.githubusercontent.com/75626387/197673456-9efd1c8d-043b-4cc5-b445-e01bb2296274.png)
 
 The parameters that have a large correlation value, are largely correlated with each other or the dependent variable is largely affected by the independent variable.
 
@@ -27,7 +27,7 @@ sns.heatmap(df.corr(), annot=True, cmap="YlGnBu")
 plt.show()
 ```
 
-![image](https://user-images.githubusercontent.com/75626387/196880241-a5202c4c-353b-436a-9630-f7f60d330d70.png)
+![image](https://user-images.githubusercontent.com/75626387/197673513-4dc2abfd-c5f2-47d7-82c5-b4012e62b2f8.png)
 
 
 Through this heatmap, we observed that the parameter suicides_no has larger
@@ -45,7 +45,7 @@ plt.xlabel('Population:  Independent variable')
 plt.ylabel('No of suicides: Target variable')
 plt.title('Population vs no of suicides');
 ```
-![image](https://user-images.githubusercontent.com/75626387/196880556-b87f429c-f4c8-497c-a3d8-a73589c9038f.png)
+![image](https://user-images.githubusercontent.com/75626387/197673670-ea4f5bb7-25cc-4f2b-969b-2c6ae4e1267a.png)
 
 * #### With Split
 
