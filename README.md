@@ -101,26 +101,31 @@ MAE(Mean absolute error): 18.017
 **Taking 70% Training and 30% Testing data**
 
 R2 score : -0.236
+
 MSE: 476057.532
+
 RMSE: 689.969
+
 MAE: 19.888
-
-
 
 **Taking 80% Training and 20% Testing data**
 
 R2 score : -0.256
+
 MSE: 625660.232
+
 RMSE: 790.987
+
 MAE: 20.844
-
-
 
 **Taking 50% Training and 50% Testing data**
 
 R2 score : -0.178
+
 MSE: 302277.129
+
 RMSE: 549.797
+
 MAE: 17.488
 
 On splitting the model into train and test data, we can observe that the R2 score has reduced. Out of all the splits 80:20 gives a better accuracy and thus has a better R2 score.
