@@ -98,6 +98,7 @@ MAE(Mean absolute error): 18.017
 
 * **With Split**
 
+
 **Taking 70% Training and 30% Testing data**
 
 R2 score : -0.236
@@ -108,6 +109,7 @@ RMSE: 689.969
 
 MAE: 19.888
 
+
 **Taking 80% Training and 20% Testing data**
 
 R2 score : -0.256
@@ -117,6 +119,7 @@ MSE: 625660.232
 RMSE: 790.987
 
 MAE: 20.844
+
 
 **Taking 50% Training and 50% Testing data**
 
